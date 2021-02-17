@@ -6,6 +6,6 @@
     "version": "1.0",
     "categories": ["clips"],
     "license": "MIT",
-    "repository": "",
-    "bugs": "",
+    "repository": "https://github.com/leehord/nova-react-code-clips",
+    "bugs": "https://github.com/leehord/nova-react-code-clips/issues",
 }
