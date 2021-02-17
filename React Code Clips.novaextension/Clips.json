@@ -1,0 +1,1339 @@
+{
+  "clips" : [
+    {
+      "children" : [
+        {
+          "content" : "import ${2:moduleName} from '${1:module}'",
+          "name" : "import",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imp"
+        },
+        {
+          "content" : "import '${1:module}'",
+          "name" : "import module",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imn"
+        },
+        {
+          "content" : "import { $2 } from '${1:module}'",
+          "name" : "import destructured module",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imd"
+        },
+        {
+          "content" : "import * as ${2:alias} from '${1:module}'",
+          "name" : "import everything",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ime"
+        },
+        {
+          "content" : "import { ${2:originalName} as ${3:alias} } from '${1:module}'",
+          "name" : "import as",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ima"
+        },
+        {
+          "content" : "export default ",
+          "name" : "export default",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "exp"
+        },
+        {
+          "content" : "export { $2 } from '${1:module}'",
+          "name" : "export destructured module",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "exd"
+        },
+        {
+          "content" : "export { ${2:originalName} as ${3:alias} } from '${1:module}'",
+          "name" : "export as",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "exa"
+        },
+        {
+          "content" : "export const ${1:functionName} = (${2:params}) => {\n\t$3\n}\n",
+          "name" : "export named function",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "enf"
+        },
+        {
+          "content" : "export default (${1:params}) => {\n\t$2\t\n}\n",
+          "name" : "export default function",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "edf"
+        },
+        {
+          "content" : "methodName = (${1:params}) => {\n\t$2\n}\n",
+          "name" : "method",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "met"
+        },
+        {
+          "content" : "${1:array}.forEach(${2:currentItem} => {\n\t$3\n})\n",
+          "name" : "forEach",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "fre"
+        },
+        {
+          "content" : "for(let ${1:item} of ${2:object}) {\n\t$3\n}\n",
+          "name" : "forOf",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "fof"
+        },
+        {
+          "content" : "for(let ${1:item} in ${2:object}) {\n\t$3\n}\n",
+          "name" : "forIn",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "fin"
+        },
+        {
+          "content" : "(${1:params}) => {\n\t$2\n}",
+          "name" : "anonymous function",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "anfn"
+        },
+        {
+          "content" : "const ${1:name} = (${2:params}) => {\n\t$3\n}\n",
+          "name" : "named function",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "nfn"
+        },
+        {
+          "content" : "const {${1:propertyName}} = ${2:objectToDestruct}",
+          "name" : "destructuring object",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "dob"
+        },
+        {
+          "content" : "const [${1:propertyName}] = ${2:arrayToDestruct}",
+          "name" : "destructuring array",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "dar"
+        },
+        {
+          "content" : "setInterval(() => {\n\t$1\n}, ${2:intervalInms})\n",
+          "name" : "setInterval",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "sti"
+        },
+        {
+          "content" : "setTimeout(() => {\n\t$1\n}, ${2:delayInms})\n",
+          "name" : "setTimeout",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "sto"
+        },
+        {
+          "content" : "return new Promise((resolve, reject) => {\n\t$1\n})\n",
+          "name" : "promise",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "prom"
+        },
+        {
+          "content" : "const { $1 } = this.props",
+          "name" : "destruct props",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cp"
+        },
+        {
+          "content" : "const { $1 } = this.state",
+          "name" : "destruct state",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cs"
+        }
+      ],
+      "name" : "Basic Methods"
+    },
+    {
+      "children" : [
+        {
+          "content" : "import React from 'react'",
+          "name" : "import React",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imr"
+        },
+        {
+          "content" : "import ReactDOM from 'react-dom'",
+          "name" : "import ReactDOM",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrd"
+        },
+        {
+          "content" : "import React, { Component } from 'react'",
+          "name" : "import React, { Component }",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrc"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'",
+          "name" : "import React, { Component } & PropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrcp"
+        },
+        {
+          "content" : "import React, { PureComponent } from 'react'",
+          "name" : "import React, { PureComponent }",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrpc"
+        },
+        {
+          "content" : "import React, { PureComponent } from 'react'\nimport PropTypes from 'prop-types'",
+          "name" : "import React, { PureComponent } & PropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrpcp"
+        },
+        {
+          "content" : "import React, { memo } from 'react'",
+          "name" : "import React, { memo }",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrm"
+        },
+        {
+          "content" : "import React, { memo } from 'react'\nimport PropTypes from 'prop-types'",
+          "name" : "import React, { memo } & PropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrmp"
+        },
+        {
+          "content" : "import PropTypes from 'prop-types'",
+          "name" : "import PropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "impt"
+        },
+        {
+          "content" : "import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom'",
+          "name" : "import React Router",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrr"
+        },
+        {
+          "content" : "import { BrowserRouter as Router } from 'react-router-dom'",
+          "name" : "import React Browser Router",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imbr"
+        },
+        {
+          "content" : "import { Route, Switch, NavLink, Link } from 'react-router-dom'",
+          "name" : "import React Browser Router - Route Combo",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imbrc"
+        },
+        {
+          "content" : "import { Route } from 'react-router-dom'",
+          "name" : "import React Browser Router - Route",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imbrr"
+        },
+        {
+          "content" : "import { Switch } from 'react-router-dom'",
+          "name" : "import React Browser Router - Switch",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imbrs"
+        },
+        {
+          "content" : "import { Link } from 'react-router-dom'",
+          "name" : "import React Browser Router - Link",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imbrl"
+        },
+        {
+          "content" : "import { NavLink } from 'react-router-dom'",
+          "name" : "import React Browser Router - NavLink",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imbrnl"
+        },
+        {
+          "content" : "import React, { useState } from 'react'",
+          "name" : "import React, { useState }",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrs"
+        },
+        {
+          "content" : "import React, { useState, useEffect } from 'react'",
+          "name" : "import React, { useState, useEffect }",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrse"
+        },
+        {
+          "content" : "import { connect } from 'react-redux'",
+          "name" : "import redux statement",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "redux"
+        },
+        {
+          "content" : "constructor(props) {\n\tsuper(props)\n\n\tthis.state = {\n\t\t$1\n\t}\n}",
+          "name" : "classConstructor",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rconst"
+        },
+        {
+          "content" : "state = {\n\t$1\n}",
+          "name" : "emptyState",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "est"
+        },
+        {
+          "content" : "componentWillMount() {\n\t$1\n}",
+          "name" : "componentWillMount",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cwm"
+        },
+        {
+          "content" : "componentDidMount() {\n\t$1\n}",
+          "name" : "componentDidMount",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cdm"
+        },
+        {
+          "content" : "componentWillReceiveProps(nextProps) {\n\t$1\n}",
+          "name" : "componentWillReceiveProps",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cwr"
+        },
+        {
+          "content" : "shouldComponentUpdate(nextProps, nextState) {\n\t$1\n}",
+          "name" : "shouldComponentUpdate",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "scu"
+        },
+        {
+          "content" : "componentWillUpdate(nextProps, nextState) {\n\t$1\n}",
+          "name" : "componentWillUpdate",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cwup"
+        },
+        {
+          "content" : "componentDidUpdate(prevProps, prevState) {\n\t$1\n}",
+          "name" : "componentDidUpdate",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cdup"
+        },
+        {
+          "content" : "componentWillUnmount() {\n\t$1\n}",
+          "name" : "componentWillUnmount",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cwun"
+        },
+        {
+          "content" : "static getDerivedStateFromProps(props, state) {\n\t$1\n}",
+          "name" : "getDerivedStateFromProps",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "gdsfp"
+        },
+        {
+          "content" : "getSnapshotBeforeUpdate = (prevProps, prevState) => {\n\t$1\n}",
+          "name" : "getSnapshotBeforeUpdate",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "gsbu"
+        },
+        {
+          "content" : "render() {\n\treturn (\n\t\t<div>\n\t\t\t$1\n\t\t<\/div>\n\t)\n}",
+          "name" : "Basic render",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ren"
+        },
+        {
+          "content" : "this.setState({$1})",
+          "name" : "componentSetStateObject",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "sst"
+        },
+        {
+          "content" : "this.setState((state, props) => { return { $1 }})",
+          "name" : "componentSetStateFunction",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ssf"
+        },
+        {
+          "content" : "this.props.${1:propName}",
+          "name" : "componentProps",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "props"
+        },
+        {
+          "content" : "this.state.${1:stateName}",
+          "name" : "componentState",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "state"
+        },
+        {
+          "content" : "const ${1:contextName} = React.createContext()",
+          "name" : "createContext",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rcontext"
+        },
+        {
+          "content" : "this.${1:refName}Ref = React.createRef()",
+          "name" : "createRef",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cref"
+        },
+        {
+          "content" : "const ref = React.createRef()",
+          "name" : "forwardRef",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "fref"
+        },
+        {
+          "content" : "this.${1:methodName} = this.${2:methodName}.bind(this)",
+          "name" : "bindThis",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "bnd"
+        }
+      ],
+      "name" : "React"
+    },
+    {
+      "children" : [
+        {
+          "content" : "import { ${1:moduleName} } from 'react-native'",
+          "name" : "reactNativeImport",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "imrn"
+        },
+        {
+          "content" : "const styles = StyleSheet.create({\n\t${1:style}\n})",
+          "name" : "rnstyle",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rnstyle"
+        }
+      ],
+      "name" : "React Native"
+    },
+    {
+      "children" : [
+        {
+          "content" : "export const ${1:actionName} = (payload) => ({\n\ttype: ${2:type},\n\tpayload\n})\n",
+          "name" : "reduxAction",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rxaction"
+        },
+        {
+          "content" : "export const ${1:constantName} = '${1:constantName}'",
+          "name" : "reduxConst",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rxconst"
+        },
+        {
+          "content" : "const initialState = {\n\n}\n\nexport default (state = initialState, { type, payload }) => {\n\tswitch (type) {\n\n\tcase ${1:typeName}:\n\t\treturn { ...state, ...payload }\n\n\tdefault:\n\t\treturn state\n\t}\n}\n",
+          "name" : "reduxReducer",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rxreducer"
+        },
+        {
+          "content" : "import { createSelector } from 'reselect'\n\nexport const ${1:selectorName} = state => state.${2:selector}\n",
+          "name" : "reduxSelector",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rxselect"
+        },
+        {
+          "content" : "import { createSlice } from '@reduxjs\/toolkit'\n\nconst initialState = {\n\n}\n\nconst ${1:Untitled-1} = createSlice({\n\tname: ${2:sliceName},\n\tinitialState,\n\treducers: {\n\t\n\t}\n});\n\nexport const {\n\n} = ${1:Untitled-1}.actions\nexport default ${1:Untitled-1}.reducer",
+          "name" : "reduxSlice",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rxslice"
+        }
+      ],
+      "name" : "Redux"
+    },
+    {
+      "children" : [
+        {
+          "content" : "PropTypes.array,",
+          "name" : "propTypeArray",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "pta"
+        },
+        {
+          "content" : "PropTypes.array.isRequired,",
+          "name" : "propTypeArrayRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptar"
+        },
+        {
+          "content" : "PropTypes.bool,",
+          "name" : "propTypeBool",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptb"
+        },
+        {
+          "content" : "PropTypes.bool.isRequired,",
+          "name" : "propTypeBoolRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptbr"
+        },
+        {
+          "content" : "PropTypes.func,",
+          "name" : "propTypeFunction",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptf"
+        },
+        {
+          "content" : "PropTypes.func.isRequired,",
+          "name" : "propTypeFunctionRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptfr"
+        },
+        {
+          "content" : "PropTypes.number,",
+          "name" : "propTypeNumber",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptn"
+        },
+        {
+          "content" : "PropTypes.number.isRequired,",
+          "name" : "propTypeNumberRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptnr"
+        },
+        {
+          "content" : "PropTypes.object,",
+          "name" : "propTypeObject",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "pto"
+        },
+        {
+          "content" : "PropTypes.object.isRequired,",
+          "name" : "propTypeObjectRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptor"
+        },
+        {
+          "content" : "PropTypes.string,",
+          "name" : "propTypeString",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "pts"
+        },
+        {
+          "content" : "PropTypes.string.isRequired,",
+          "name" : "propTypeStringRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptsr"
+        },
+        {
+          "content" : "PropTypes.node,",
+          "name" : "propTypeNode",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptnd"
+        },
+        {
+          "content" : "PropTypes.node.isRequired,",
+          "name" : "propTypeNodeRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptndr"
+        },
+        {
+          "content" : "PropTypes.element,",
+          "name" : "propTypeElement",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptel"
+        },
+        {
+          "content" : "PropTypes.element.isRequired,",
+          "name" : "propTypeElementRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptelr"
+        },
+        {
+          "content" : "PropTypes.instanceOf(${1:name}),",
+          "name" : "propTypeInstanceOf",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "pti"
+        },
+        {
+          "content" : "PropTypes.instanceOf(${1:name}).isRequired,",
+          "name" : "propTypeInstanceOfRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptir"
+        },
+        {
+          "content" : "PropTypes.oneOf(['${1:name}']),",
+          "name" : "propTypeEnum",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "pte"
+        },
+        {
+          "content" : "PropTypes.oneOf(['${1:name}']).isRequired,",
+          "name" : "propTypeEnumRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "pter"
+        },
+        {
+          "content" : "PropTypes.oneOfType([\n\t${1:name}\n]),",
+          "name" : "propTypeOneOfType",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptet"
+        },
+        {
+          "content" : "PropTypes.oneOfType([\n\t${1:name}\n]).isRequired,",
+          "name" : "propTypeOneOfTypeRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptetr"
+        },
+        {
+          "content" : "PropTypes.arrayOf(${1:name}),",
+          "name" : "propTypeArrayOf",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptao"
+        },
+        {
+          "content" : "PropTypes.arrayOf(${1:name}).isRequired,",
+          "name" : "propTypeArrayOfRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptaor"
+        },
+        {
+          "content" : "PropTypes.objectOf(${1:name}),",
+          "name" : "propTypeObjectOf",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptoo"
+        },
+        {
+          "content" : "PropTypes.objectOf(${1:name}).isRequired,",
+          "name" : "propTypeObjectOfRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptoor"
+        },
+        {
+          "content" : "PropTypes.shape({\n\t$1\n}),",
+          "name" : "propTypeShape",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptsh"
+        },
+        {
+          "content" : "PropTypes.shape({\n\t$1\n}).isRequired,",
+          "name" : "propTypeShapeRequired",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptshr"
+        },
+        {
+          "content" : "PropTypes.any,",
+          "name" : "propTypeAny",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptany"
+        },
+        {
+          "content" : "static propTypes = {\n\t$1\n}\n",
+          "name" : "staticPropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ptypes"
+        }
+      ],
+      "name" : "PropTypes"
+    },
+    {
+      "children" : [
+        {
+          "content" : "import { compose, graphql } from 'react-apollo'\n",
+          "name" : "graphQLForComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "graphql"
+        },
+        {
+          "content" : "export default compose(\n\tgraphql(${1:queryOrMutation}, { name: ${2:name} }),\n)(${1:queryOrMutation})",
+          "name" : "exportGraphQL",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "expgql"
+        }
+      ],
+      "name" : "GraphQL"
+    },
+    {
+      "children" : [
+        {
+          "content" : "console.log(${1:object})",
+          "name" : "consoleLog",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "clg"
+        },
+        {
+          "content" : "console.log('${1:object}', ${1:object})",
+          "name" : "consoleLogObject",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "clo"
+        },
+        {
+          "content" : "console.time('${1:object}')",
+          "name" : "consoleTime",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ctm"
+        },
+        {
+          "content" : "console.timeEnd('${1:object}')",
+          "name" : "consoleTimeEnd",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cte"
+        },
+        {
+          "content" : "console.assert(${1:expression}, ${2:object})",
+          "name" : "consoleAssert",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cas"
+        },
+        {
+          "content" : "console.clear()",
+          "name" : "consoleClear",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ccl"
+        },
+        {
+          "content" : "console.count(${1:label})",
+          "name" : "consoleCount",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cco"
+        },
+        {
+          "content" : "console.dir(${1:object})",
+          "name" : "consoleDir",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cdi"
+        },
+        {
+          "content" : "console.error(${1:object})",
+          "name" : "consoleError",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cer"
+        },
+        {
+          "content" : "console.group(\"${1:label}\")",
+          "name" : "consoleGroup",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cgr"
+        },
+        {
+          "content" : "console.groupEnd()",
+          "name" : "consoleGroupEnd",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cge"
+        },
+        {
+          "content" : "console.trace(${1:object})",
+          "name" : "consoleTrace",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "ctr"
+        },
+        {
+          "content" : "console.warn(${1:object})",
+          "name" : "consoleWarn",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cwa"
+        },
+        {
+          "content" : "console.info(${1:object})",
+          "name" : "consoleInfo",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cin"
+        }
+      ],
+      "name" : "Console"
+    },
+    {
+      "children" : [
+        {
+          "content" : "import React, { Component } from 'react'\n\nexport default class ${1:FileName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n",
+          "name" : "reactClassComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rcc"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\n\nexport class ${1:FileName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n\nexport default ${1:FileName}\n",
+          "name" : "reactClassExportComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rce"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nexport class ${1:FileName} extends Component {\n\tstatic propTypes = {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n\nexport default ${1:FileName}\n",
+          "name" : "reactClassExportComponentWithPropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rcep"
+        },
+        {
+          "content" : "import React, { PureComponent } from 'react'\n\nexport default class ${1:FileName} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n",
+          "name" : "reactClassPureComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rcp"
+        },
+        {
+          "content" : "import React, { PureComponent } from 'react'\nimport PropTypes from 'prop-types'\n\nexport default class ${1:FileName} extends PureComponent {\n\tstatic propTypes = {\n\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n",
+          "name" : "reactClassPureComponentWithPropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rpcp"
+        },
+        {
+          "content" : "import React, { PureComponent } from 'react'\n\nexport class ${1:FileName} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n\nexport default ${1:FileName}\n",
+          "name" : "reactClassExportPureComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rpce"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\n\nexport default class ${1:FileName} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$4\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n",
+          "name" : "reactClassComponentPropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rccp"
+        },
+        {
+          "content" : "import React from 'react'\nimport PropTypes from 'prop-types'\n\nfunction ${1:FileName}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n\n${1:FileName}.propTypes = {\n\n}\n\nexport default ${1:FileName}\n\n",
+          "name" : "reactFuctionalComponentWithPropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rfcp"
+        },
+        {
+          "content" : "import React from 'react'\n\nexport default function ${1:FileName}() {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n",
+          "name" : "reactFuctionalComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rfc"
+        },
+        {
+          "content" : "import React from 'react'\n\nfunction ${1:FileName}() {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n\nexport default ${1:FileName}\n",
+          "name" : "reactFunctionalExportComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rfce"
+        },
+        {
+          "content" : "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:FileName} = props => {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n\n${1:FileName}.propTypes = {\n\n}\n\nexport default ${1:FileName}\n",
+          "name" : "reactArrowFunctionComponentWithPropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rafcp"
+        },
+        {
+          "content" : "import React from 'react'\n\nexport const ${1:FileName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n",
+          "name" : "reactArrowFunctionComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rafc"
+        },
+        {
+          "content" : "import React, { memo } from 'react'\n\nexport default memo(function ${1:FileName}() {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n})\n",
+          "name" : "reactFunctionMemoComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rmc"
+        },
+        {
+          "content" : "import React, { memo } from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1:FileName} = memo(function ${1:FileName}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n})\n\n${1:FileName}.propTypes = {\n\n}\n\nexport default ${1:FileName}\n",
+          "name" : "reactFunctionMemoComponentWithPropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rmcp"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\nimport { connect } from 'react-redux'\n\nexport class ${1:FileName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:FileName})\n",
+          "name" : "reactClassComponentRedux",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rcredux"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\n\nexport class ${1:FileName} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$4\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:FileName})\n",
+          "name" : "reactClassComponentReduxPropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rcreduxp"
+        },
+        {
+          "content" : "import React from 'react'\nimport { connect } from 'react-redux'\n\nexport const ${1:FileName} = (props) => {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:FileName})\n",
+          "name" : "reactFunctionalComponentRedux",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rfcredux"
+        },
+        {
+          "content" : "import React from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\n\nexport const ${1:FileName} = (props) => {\n\treturn (\n\t\t<div>\n\t\t\t$4\n\t\t<\/div>\n\t)\n}\n\n${1:FileName}.propTypes = {\n\t${2:props}: ${3:PropTypes}\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:FileName})\n",
+          "name" : "reactFunctionalComponentReduxPropTypes",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rfcreduxp"
+        },
+        {
+          "content" : "const mapStateToProps = (state) => ({\n\t$1\n})\n\nconst mapDispatchToProps = {}\n",
+          "name" : "mappingtoProps",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "reduxmap"
+        }
+      ],
+      "name" : "React Components"
+    },
+    {
+      "children" : [
+        {
+          "content" : "import React, { Component } from 'react'\nimport { Text, View } from 'react-native'\n\nexport default class ${1:FileName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text>$2<\/Text>\n\t\t\t<\/View>\n\t\t)\n\t}\n}\n",
+          "name" : "reactNativeComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rnc"
+        },
+        {
+          "content" : "import React from 'react'\nimport { View, Text } from 'react-native'\n\nexport default function ${1:FileName}() {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$2<\/Text>\n\t\t<\/View>\n\t)\n}\n",
+          "name" : "reactNativeFunctionalComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rnf"
+        },
+        {
+          "content" : "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'\n\nexport default function ${1:FileName}() {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$2<\/Text>\n\t\t<\/View>\n\t)\n}\n\nconst styles = StyleSheet.create({})\n",
+          "name" : "reactNativeFunctionalComponentWithStyles",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rnfs"
+        },
+        {
+          "content" : "import React from 'react'\nimport { View, Text } from 'react-native'\n\nconst ${1:FileName} = () => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$2<\/Text>\n\t\t<\/View>\n\t)\n}\n\nexport default Untitled-1\n",
+          "name" : "reactNativeFunctionalExportComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rnfe"
+        },
+        {
+          "content" : "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'\n\nconst ${1:FileName} = () => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$2<\/Text>\n\t\t<\/View>\n\t)\n}\n\nexport default ${1:FileName}\n\nconst styles = StyleSheet.create({})\n",
+          "name" : "reactNativeFunctionalExportComponentWithStyles",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rnfes"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\nimport { Text, StyleSheet, View } from 'react-native'\n\nexport default class ${1:FileName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text>$2<\/Text>\n\t\t\t<\/View>\n\t\t)\n\t}\n}\n\nconst styles = StyleSheet.create({})\n",
+          "name" : "reactNativeComponentWithStyles",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rncs"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\nimport { Text, View } from 'react-native'\n\nexport class ${1:FileName} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text>$2<\/Text>\n\t\t\t<\/View>\n\t\t)\n\t}\n}\n\nexport default ${1:FileName}\n",
+          "name" : "reactNativeComponentExport",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rnce"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\nimport { View, Text } from 'react-native'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\n\nexport class ${1:FileName} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text>${2:prop}<\/Text>\n\t\t\t<\/View>\n\t\t)\n\t}\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:FileName})\n",
+          "name" : "reactNativeClassComponentRedux",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "rncredux"
+        }
+      ],
+      "name" : "React Native Components"
+    },
+    {
+      "children" : [
+        {
+          "content" : "\/**\n * $1\n *\/",
+          "name" : "comment block",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "cmmb"
+        },
+        {
+          "content" : "import React from 'react'\nimport PropTypes from 'prop-types'\n\nexport default (WrappedComponent) => {\n\tconst hocComponent = ({ ...props }) => <WrappedComponent {...props} \/>\n\n\thocComponent.propTypes = {\n\t}\n\n\treturn hocComponent\n}\n",
+          "name" : "higherOrderComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "hoc"
+        },
+        {
+          "content" : "import React from 'react'\nimport PropTypes from 'prop-types'\nimport { connect } from 'react-redux'\n\nexport const mapStateToProps = state => ({\n\n})\n\nexport const mapDispatchToProps = {\n \n}\n\nexport const ${1:hocComponentName} = (WrappedComponent) => {\n\tconst hocComponent = ({ ...props }) => <WrappedComponent {...props} \/>\n\n\thocComponent.propTypes = {\n\t}\n\n\treturn hocComponent\n}\n\nexport default WrapperComponent => connect(mapStateToProps, mapDispatchToProps)(${1:hocComponentName}(WrapperComponent))\n",
+          "name" : "higherOrderComponentWithRedux",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "hocredux"
+        },
+        {
+          "content" : "const [${1:state}, set${1:state}] = useState(${2:initialState})",
+          "name" : "useState",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useState"
+        },
+        {
+          "content" : "useEffect(() => {\n\t${1:effect}\n\treturn () => {\n\t\t${2:cleanup}\n\t}\n}, [${3:input}])",
+          "name" : "useEffect",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useEffect"
+        },
+        {
+          "content" : "const ${1:context} = useContext(${2:contextValue})",
+          "name" : "useContext",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useContext"
+        },
+        {
+          "content" : "const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState}, ${3:init})",
+          "name" : "useReducer",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useReducer"
+        },
+        {
+          "content" : "useCallback(\n\t() => {\n\t\t${1:callback}\n\t},\n\t[${2:input}],\n)",
+          "name" : "useCallback",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useCallback"
+        },
+        {
+          "content" : "useMemo(() => ${1:function}, ${2:input})",
+          "name" : "useMemo",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useMemo"
+        },
+        {
+          "content" : "const ${1:ref} = useRef(${2:initialValue})",
+          "name" : "useRef",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useRef"
+        },
+        {
+          "content" : "useImperativeHandle(\n\t${1:ref},\n\t() => {\n\t\t${2:handler}\n\t},\n\t[${3:input}],\n)",
+          "name" : "useImperativeHandle",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useImperativeHandle"
+        },
+        {
+          "content" : "useDebugValue(${1:value})",
+          "name" : "useDebugValue",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useDebugValue"
+        },
+        {
+          "content" : "useLayoutEffect(() => {\n\t${1:effect}\n\treturn () => {\n\t\t${2:cleanup}\n\t};\n}, [${3:input}])",
+          "name" : "useLayoutEffect",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useLayoutEffect"
+        },
+        {
+          "content" : "const ${1:state} = useSelector(state => state.${1:state})",
+          "name" : "useSelector",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useSelector"
+        },
+        {
+          "content" : "const dispatch = useDispatch(${1:function})",
+          "name" : "useDispatch",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "useDispatch"
+        },
+        {
+          "content" : "tpyeof ",
+          "name" : "typeOf",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tpf"
+        },
+        {
+          "content" : "describe('$1', () => {\n\t$2\n})\n",
+          "name" : "describeBlock",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "desc"
+        },
+        {
+          "content" : "test('should $1', () => {\n\t$2\n})\n",
+          "name" : "testBlock",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "test"
+        },
+        {
+          "content" : "test('should $1', async () => {\n\t$2\n})\n",
+          "name" : "testAsyncBlock",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "testa"
+        },
+        {
+          "content" : "it('should $1', () => {\n\t$2\n})\n",
+          "name" : "itBlock",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tit"
+        },
+        {
+          "content" : "it('should $1', async () => {\n\t$2\n})\n",
+          "name" : "itAsyncBlock",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tita"
+        },
+        {
+          "content" : "import React from 'react'\nimport renderer from 'react-test-renderer'\n\nimport { ${1:FileName} } from '..\/${1:FileName}'\n\ndescribe('<${1:FileName} \/>', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(<${1:FileName} {...defaultProps} \/>)\n\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})\n",
+          "name" : "setupReactTest",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "stest"
+        },
+        {
+          "content" : "import 'react-native'\nimport React from 'react'\nimport renderer from 'react-test-renderer'\n\nimport ${1:FileName} from '..\/${1:FileName}'\n\ndescribe('<${1:FileName} \/>', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(<${1:FileName} {...defaultProps} \/>)\n\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})\n",
+          "name" : "setupReactNativeTest",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "sntest"
+        },
+        {
+          "content" : "import React from 'react'\nimport renderer from 'react-test-renderer'\nimport { Provider } from 'react-redux'\n\nimport store from 'src\/store'\nimport { ${1:FileName} } from '..\/${1:FileName}'\n\ndescribe('<${1:FileName} \/>', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t <${1:FileName} {...defaultProps} \/>\n\t\t<\/Provider>,\n\t)\n\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})\n",
+          "name" : "setupReactComponentTestWithRedux",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "srtest"
+        },
+        {
+          "content" : "import 'react-native'\nimport React from 'react'\nimport renderer from 'react-test-renderer'\nimport { Provider } from 'react-redux'\n\nimport store from 'src\/store'\nimport ${1:FileName} from '..\/${1:FileName}'\n\ndescribe('<${1:FileName} \/>', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t\t<${1:FileName} {...defaultProps} \/>\n\t\t<\/Provider>,\n\t)\n\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})\n",
+          "name" : "setupReactNativeTestWithRedux",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "snrtest"
+        }
+      ],
+      "name" : "Other"
+    },
+    {
+      "children" : [
+        {
+          "content" : "import React, { Component } from 'react'\n\ninterface Props {\n\t\n}\ninterface State {\n\t\n}\n\nexport default class ${1:FileName} extends Component<Props, State> {\n\tstate = {}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n",
+          "name" : "typeScriptReactClassComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrcc"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\n\ninterface Props {\n\t\n}\ninterface State {\n\t\n}\n\nclass ${1:FileName} extends Component<Props, State> {\n\tstate = {}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n\nexport default ${1:FileName}\n",
+          "name" : "typeScriptReactClassExportComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrce"
+        },
+        {
+          "content" : "import React, { ReactElement } from 'react'\n\ninterface Props {\n\t\n}\n\nfunction ${1:FileName}({}: Props): ReactElement {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n\nexport default ${1:FileName}\n",
+          "name" : "typeScriptReactFunctionalExportComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrfce"
+        },
+        {
+          "content" : "import React, { ReactElement } from 'react'\n\ninterface Props {\n\t\n}\n\nexport default function ${1:FileName}({}: Props): ReactElement {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n",
+          "name" : "typeScriptReactFunctionalComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrfc"
+        },
+        {
+          "content" : "import React from 'react'\n\ninterface Props {\n\t\n}\n\nconst ${1:FileName} = (props: Props) => {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n\nexport default ${1:FileName}\n",
+          "name" : "typeScriptReactArrowFunctionExportComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrafce"
+        },
+        {
+          "content" : "import React from 'react'\n\ninterface Props {\n\t\n}\n\nexport const ${1:FileName} = (props: Props) => {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n",
+          "name" : "typeScriptReactArrowFunctionComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrafc"
+        },
+        {
+          "content" : "import React, { PureComponent } from 'react'\n\ninterface Props {\n\t\n}\n\nexport default class ${1:FileName} extends PureComponent<Props> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n",
+          "name" : "typeScriptReactClassPureComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrpc"
+        },
+        {
+          "content" : "import React, { PureComponent } from 'react'\n\ninterface Props {\n\t\n}\n\nclass ${1:FileName} extends PureComponent<Props> {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n\nexport default ${1:FileName}\n",
+          "name" : "typeScriptReactClassExportPureComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrpce"
+        },
+        {
+          "content" : "import React, { memo } from 'react'\n\ninterface Props {\n\t\n}\n\nexport default memo(function ${1:FileName}({}: Props) {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n})\n",
+          "name" : "typeScriptReactFunctionMemoComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrmc"
+        },
+        {
+          "content" : "import React, { Component } from 'react'\nimport { connect } from 'react-redux'\n\ninterface Props {\n\t\n}\ninterface State {\n\t\n}\n\nexport class ${1:FileName} extends Component<Props, State> {\n\tstate = {}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$2\n\t\t\t<\/div>\n\t\t)\n\t}\n}\n\nconst mapStateToProps = (state) => ({\n\t\n})\n\nconst mapDispatchToProps = {\n\t\n}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:FileName})\n",
+          "name" : "typeScriptReactClassComponentRedux",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrcredux"
+        }
+      ],
+      "name" : "TypeScript React Components"
+    },
+    {
+      "children" : [
+        {
+          "content" : "import React from 'react'\nimport { View, Text } from 'react-native'\n\ninterface Props {\n\t\n}\n\nconst ${1:FileName} = (props: Props) => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$2<\/Text>\n\t\t<\/View>\n\t)\n}\n\nexport default ${1:FileName}\n",
+          "name" : "typescriptReactNativeArrowFunctionComponent",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrnf"
+        },
+        {
+          "content" : "import React from 'react'\nimport { View } from 'react-native'\n\ninterface ${1:FileName}Props {\n\t\n}\n\nconst ${1:FileName}: React.FunctionComponent<${1:FileName}Props> = (props) => {\n\treturn (\n\t\t<View>\n\t\t\t$2\n\t\t<\/View>\n\t)\n}\n\nexport default ${1:FileName}\n",
+          "name" : "typescriptReactNativeArrowFunctionComponentNamedProps",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrnfi"
+        },
+        {
+          "content" : "import React from 'react'\nimport { StyleSheet, Text, View } from 'react-native'\n\ninterface Props {\n\t\n}\n\nconst ${1:FileName} = (props: Props) => {\n\treturn (\n\t\t<View>\n\t\t\t<Text>$2<\/Text>\n\t\t<\/View>\n\t)\n}\n\nexport default ${1:FileName}\n\nconst styles = StyleSheet.create({})\n",
+          "name" : "typescriptReactNativeArrowFunctionComponentWithStyles",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "tsrnfs"
+        },
+        {
+          "content" : "export interface ${1:FileName} {$2}",
+          "name" : "Export interface",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "expint"
+        },
+        {
+          "content" : "export type ${1:FileName} = {$2}",
+          "name" : "Export type",
+          "scope" : "editor",
+          "syntax" : ["jsx", "javascript", "tsx", "typescript"],
+          "trigger" : "exptp"
+        }
+      ],
+      "name" : "TypeScript React Native Components"
+    }
+  ]
+}
