@@ -1,8 +1,8 @@
-# React Code Clips
+# React Code Clips for Nova
 
 ## Description
 
-This extension gives you JavaScript and TypeScript code clips for React, React Native, Redux and GraphQL.
+This extension for Nova gives you JavaScript and TypeScript code clips for React, React Native, Redux and GraphQL.
 
 ## Clips
 
