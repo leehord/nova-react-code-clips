@@ -871,7 +871,7 @@ const dispatch = useDispatch(${1:function})
 #### `tpf`
 
 ```javascript
-tpyeof 
+typeof 
 ```
 
 #### `testa`
