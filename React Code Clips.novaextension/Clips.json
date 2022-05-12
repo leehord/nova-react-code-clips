@@ -1162,7 +1162,7 @@
           "trigger" : "useDispatch"
         },
         {
-          "content" : "tpyeof ",
+          "content" : "typeof ",
           "name" : "typeOf",
           "scope" : "editor",
           "syntax" : ["jsx", "javascript", "tsx", "typescript"],
