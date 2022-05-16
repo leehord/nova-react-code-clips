@@ -775,6 +775,121 @@ export default (WrappedComponent) => {
 }
 ```
 
+#### `useState`
+
+```javascript
+const [${1:state}, set${1:state}] = useState(${2:initialState})
+```
+
+#### `useEffect`
+
+```javascript
+useEffect(() => {
+  ${1:effect}
+  return () => {
+    ${2:cleanup}
+  }
+}, [${3:input}]
+```
+
+#### `useContext`
+
+```javascript
+const ${1:context} = useContext(${2:contextValue})
+```
+
+#### `useReducer`
+
+```javascript
+const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState}, ${3:init})
+```
+
+#### `useCallback`
+
+```javascript
+useCallback(
+  () => {
+      ${1:callback}
+  },
+  [${2:input}],
+)
+```
+
+#### `useMemo`
+
+```javascript
+useMemo(() => ${1:function}, ${2:input})
+```
+
+#### `useRef`
+
+```javascript
+const ${1:ref} = useRef(${2:initialValue})
+```
+
+#### `useImperativeHandle`
+
+```javascript
+useImperativeHandle(
+  ${1:ref},
+  () => {
+    ${2:handler}
+  },
+  [${3:input}],
+)
+```
+
+#### `useDebugValue`
+
+```javascript
+useDebugValue(${1:value})
+```
+
+#### `useLayoutEffect`
+
+```javascript
+useLayoutEffect(() => {
+  ${1:effect}
+  return () => {
+    ${2:cleanup}
+  };
+}, [${3:input}])
+```
+
+#### `useSelector`
+
+```javascript
+const ${1:state} = useSelector(state => state.${1:state})
+```
+
+#### `useDispatch`
+
+```javascript
+const dispatch = useDispatch(${1:function})
+```
+
+#### `tpf`
+
+```javascript
+typeof 
+```
+
+#### `testa`
+
+```javascript
+test('should $1', async () => {
+  $2
+})
+```
+
+#### `tita`
+
+```javascript
+it('should $1', async () => {
+  $2
+})
+```
+
 ## Acknowledgements
 
 React Code Clips is based on [Damian Sznajder's VS Code extension](https://github.com/dsznajder/vscode-es7-javascript-react-snippets)
