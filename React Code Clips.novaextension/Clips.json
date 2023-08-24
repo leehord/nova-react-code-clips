@@ -936,7 +936,7 @@
         },
         {
           "content" : "import React from 'react'\n\nconst ${1:FileName} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$2\n\t\t<\/div>\n\t)\n}\n\nexport default ${1:FileName}\n",
-          "name" : "reactArrowFunctionComponentWithSeapratedExport",
+          "name" : "reactArrowFunctionComponentWithSeparatedExport",
           "scope" : "editor",
           "syntax" : ["jsx", "javascript", "tsx", "typescript"],
           "trigger" : "rafce"
