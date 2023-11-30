@@ -3,7 +3,7 @@
   "name": "React Code Clips",
   "organization": "Lee Hord",
   "description": "A collection of JavaScript and TypeScript code clips for React, React Native, Redux and GraphQL.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "categories": ["clips"],
   "license": "MIT",
   "repository": "https://github.com/leehord/nova-react-code-clips",
