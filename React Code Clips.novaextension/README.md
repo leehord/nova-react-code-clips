@@ -31,53 +31,39 @@ This extension gives you JavaScript and TypeScript code clips for React, React N
 |  `sti→` | `setInterval(() => { }, intervalTime`               |
 |  `sto→` | `setTimeout(() => { }, delayTime`                   |
 | `prom→` | `return new Promise((resolve, reject) => { }`       |
-|   `cp→` | `const { } = this.props`                            |
-|   `cs→` | `const { } = this.state`                            |
 
 ### React
 
 |     Trigger | Description                                                                         |
 | ----------: | ----------------------------------------------------------------------------------- |
 |      `imr→` | `import React from 'react'`                                                         |
-|     `imrd→` | `import ReactDOM from 'react-dom'`                                                  |
+|     `imrd→` | `import ReactDOM from 'react-dom/client'`                                           |
+|    `croot→` | `import { createRoot } from 'react-dom/client'`                                     |
 |     `imrc→` | `import React, { Component } from 'react'`                                          |
 |    `imrcp→` | `import React, { Component } from 'react' & import PropTypes from 'prop-types'`     |
 |    `imrpc→` | `import React, { PureComponent } from 'react'`                                      |
 |   `imrpcp→` | `import React, { PureComponent } from 'react' & import PropTypes from 'prop-types'` |
-|     `imrm→` | `import React, { memo } from 'react'`                                               |
-|    `imrmp→` | `import React, { memo } from 'react' & import PropTypes from 'prop-types'`          |
+|     `imrm→` | `import { memo } from 'react'`                                                      |
+|    `imrmp→` | `import { memo } from 'react' & import PropTypes from 'prop-types'`                 |
 |     `impt→` | `import PropTypes from 'prop-types'`                                                |
-|     `imrr→` | `import { BrowserRouter as Router, Route, NavLink} from 'react-router-dom'`         |
-|     `imbr→` | `import { BrowserRouter as Router} from 'react-router-dom'`                         |
-|    `imbrc→` | `import { Route, Switch, NavLink, Link } from react-router-dom'`                    |
-|    `imbrr→` | `import { Route } from 'react-router-dom'`                                          |
-|    `imbrs→` | `import { Switch } from 'react-router-dom'`                                         |
-|    `imbrl→` | `import { Link } from 'react-router-dom'`                                           |
-|   `imbrnl→` | `import { NavLink } from 'react-router-dom'`                                        |
-|     `imrs→` | `import React, { useState } from 'react'`                                           |
-|    `imrse→` | `import React, { useState, useEffect } from 'react'`                                |
+|     `imrr→` | `import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom'` |
+|     `imbr→` | `import { BrowserRouter as Router } from 'react-router-dom'`                          |
+|    `imbrc→` | `import { Routes, Route, NavLink, Link, Outlet } from 'react-router-dom'`             |
+|    `imbrr→` | `import { Route } from 'react-router-dom'`                                            |
+|    `imbrs→` | `import { Routes } from 'react-router-dom'`                                           |
+|    `imbrl→` | `import { Link } from 'react-router-dom'`                                             |
+|   `imbrnl→` | `import { NavLink } from 'react-router-dom'`                                          |
+|    `imbro→` | `import { Outlet } from 'react-router-dom'`                                           |
+|   `imbrna→` | `import { Navigate } from 'react-router-dom'`                                         |
+|   `imrnav→` | `import { useNavigate } from 'react-router-dom'`                                      |
+|   `imrpar→` | `import { useParams } from 'react-router-dom'`                                        |
+|   `imrloc→` | `import { useLocation } from 'react-router-dom'`                                      |
+|    `imrsp→` | `import { useSearchParams } from 'react-router-dom'`                                  |
+|     `imrs→` | `import { useState } from 'react'`                                                  |
+|    `imrse→` | `import { useState, useEffect } from 'react'`                                       |
 |    `redux→` | `import { connect } from 'react-redux'`                                             |
-|   `rconst→` | `constructor(props) with this.state`                                                |
-|    `rconc→` | `constructor(props, context) with this.state`                                       |
-|      `est→` | `this.state = { }`                                                                  |
-|      `cwm→` | `componentWillMount = () => { }` DEPRECATED!!!                                      |
-|      `cdm→` | `componentDidMount = () => { }`                                                     |
-|      `cwr→` | `componentWillReceiveProps = (nextProps) => { }` DEPRECATED!!!                      |
-|      `scu→` | `shouldComponentUpdate = (nextProps, nextState) => { }`                             |
-|     `cwup→` | `componentWillUpdate = (nextProps, nextState) => { }` DEPRECATED!!!                 |
-|     `cdup→` | `componentDidUpdate = (prevProps, prevState) => { }`                                |
-|     `cwun→` | `componentWillUnmount = () => { }`                                                  |
-|    `gdsfp→` | `static getDerivedStateFromProps(nextProps, prevState) { }`                         |
-|     `gsbu→` | `getSnapshotBeforeUpdate = (prevProps, prevState) => { }`                           |
-|      `ren→` | `render() { return( ) }`                                                            |
-|      `sst→` | `this.setState({ })`                                                                |
-|      `ssf→` | `this.setState((state, props) => return { })`                                       |
-|    `props→` | `this.props.propName`                                                               |
-|    `state→` | `this.state.stateName`                                                              |
-| `rcontext→` | `const ${1:contextName} = React.createContext()`                                    |
-|     `cref→` | `this.${1:refName}Ref = React.createRef()`                                          |
-|     `fref→` | `const ref = React.createRef()`                                                     |
-|      `bnd→` | `this.methodName = this.methodName.bind(this)`                                      |
+| `rcontext→` | `const ${1:contextName} = createContext()`                                          |
+|     `fref→` | `React.forwardRef((props, ref) => element)`                                         |
 
 ### React Native
 
@@ -133,10 +119,12 @@ This extension gives you JavaScript and TypeScript code clips for React, React N
 
 ### GraphQL
 
-|    Trigger | Description                                             |
-| ---------: | ------------------------------------------------------- |
-| `graphql→` | `import { compose, graphql } from react-apollo'`        |
-| `expgql->` | `export default compose(graphql($1, { name: $2 }))($3)` |
+> Uses `@apollo/client` hooks. Install with `npm install @apollo/client graphql`.
+
+|    Trigger | Description                                                   |
+| ---------: | ------------------------------------------------------------- |
+| `graphql→` | `import { useQuery, useMutation, gql } from '@apollo/client'` |
+|  `expgql→` | `useQuery(QUERY, { variables: { } })`                         |
 
 ### Console
 
@@ -159,114 +147,9 @@ This extension gives you JavaScript and TypeScript code clips for React, React N
 
 ### React Components
 
-#### `rcc`
-
-```javascript
-import React, { Component } from 'react'
-
-export default class FileName extends Component {
-  render() {
-    return <div>$2</div>
-  }
-}
-```
-
-#### `rce`
-
-```javascript
-import React, { Component } from 'react'
-
-export class FileName extends Component {
-  render() {
-    return <div>$2</div>
-  }
-}
-
-export default $1
-```
-
-#### `rcep`
-
-```javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-export class FileName extends Component {
-  static propTypes = {}
-
-  render() {
-    return <div>$2</div>
-  }
-}
-
-export default $1
-```
-
-#### `rpc`
-
-```javascript
-import React, { PureComponent } from 'react'
-
-export default class FileName extends PureComponent {
-  render() {
-    return <div>$2</div>
-  }
-}
-```
-
-#### `rpcp`
-
-```javascript
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-
-export default class FileName extends PureComponent {
-  static propTypes = {}
-
-  render() {
-    return <div>$2</div>
-  }
-}
-```
-
-#### `rpce`
-
-```javascript
-import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
-
-export class FileName extends PureComponent {
-  static propTypes = {}
-
-  render() {
-    return <div>$2</div>
-  }
-}
-
-export default FileName
-```
-
-#### `rccp`
-
-```javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-export default class FileName extends Component {
-  static propTypes = {
-    $2: $3,
-  }
-
-  render() {
-    return <div>$4</div>
-  }
-}
-```
-
 #### `rfcp`
 
 ```javascript
-import React from 'react'
 import PropTypes from 'prop-types'
 
 function $1(props) {
@@ -281,8 +164,6 @@ export default $1
 #### `rfc`
 
 ```javascript
-import React from 'react'
-
 export default function $1() {
   return <div>$0</div>
 }
@@ -291,8 +172,6 @@ export default function $1() {
 #### `rfce`
 
 ```javascript
-import React from 'react'
-
 function $1() {
   return <div>$0</div>
 }
@@ -303,7 +182,6 @@ export default $1
 #### `rafcp`
 
 ```javascript
-import React from 'react'
 import PropTypes from 'prop-types'
 
 const $1 = (props) => {
@@ -318,8 +196,6 @@ export default $1
 #### `rafc`
 
 ```javascript
-import React from 'react'
-
 export const $1 = () => {
   return <div>$0</div>
 }
@@ -328,8 +204,6 @@ export const $1 = () => {
 #### `rafce`
 
 ```javascript
-import React from 'react'
-
 const $1 = () => {
   return <div>$0</div>
 }
@@ -340,7 +214,7 @@ export default $1
 #### `rmc`
 
 ```javascript
-import React, { memo } from 'react'
+import { memo } from 'react'
 
 export default memo(function $1() {
   return <div>$0</div>
@@ -350,7 +224,7 @@ export default memo(function $1() {
 #### `rmcp`
 
 ```javascript
-import React, { memo } from 'react'
+import { memo } from 'react'
 import PropTypes from 'prop-types'
 
 const $1 = memo(function $1(props) {
@@ -362,53 +236,9 @@ $1.propTypes = {}
 export default $1
 ```
 
-#### `rcredux`
-
-```javascript
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-
-export class FileName extends Component {
-  render() {
-    return <div>$4</div>
-  }
-}
-
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(FileName)
-```
-
-#### `rcreduxp`
-
-```javascript
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-
-export class FileName extends Component {
-  static propTypes = {
-    $2: $3,
-  }
-
-  render() {
-    return <div>$4</div>
-  }
-}
-
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(FileName)
-```
-
 #### `rfcredux`
 
 ```javascript
-import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 export const FileName = () => {
@@ -422,10 +252,9 @@ const mapDispatchToProps = {}
 export default connect(mapStateToProps, mapDispatchToProps)(FileName)
 ```
 
-#### `rfreduxp`
+#### `rfcreduxp`
 
 ```javascript
-import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
@@ -452,29 +281,63 @@ const mapStateToProps = (state) => ({})
 const mapDispatchToProps = {}
 ```
 
-### React Native Components
-
-#### `rnc`
+#### `reb`
 
 ```javascript
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import { Component } from 'react'
 
-export default class FileName extends Component {
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { hasError: false }
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true }
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error(error, errorInfo)
+  }
+
   render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    )
+    if (this.state.hasError) {
+      return <h1>Something went wrong.</h1>
+    }
+    return this.props.children
   }
 }
+
+export default ErrorBoundary
 ```
+
+#### `rlazy`
+
+```javascript
+const Component = lazy(() => import('./Component'))
+```
+
+#### `rsuspense`
+
+```javascript
+import { Suspense, lazy } from 'react'
+
+const Component = lazy(() => import('./Component'))
+
+export default function Parent() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Component />
+    </Suspense>
+  )
+}
+```
+
+### React Native Components
 
 #### `rnf`
 
 ```javascript
-import React from 'react'
 import { View, Text } from 'react-native'
 
 export default function $1() {
@@ -489,7 +352,6 @@ export default function $1() {
 #### `rnfs`
 
 ```javascript
-import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 
 export default function $1() {
@@ -506,7 +368,6 @@ const styles = StyleSheet.create({})
 #### `rnfe`
 
 ```javascript
-import React from 'react'
 import { View, Text } from 'react-native'
 
 const $1 = () => {
@@ -523,7 +384,6 @@ export default $1
 #### `rnfes`
 
 ```javascript
-import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 
 const $1 = () => {
@@ -539,74 +399,82 @@ export default $1
 const styles = StyleSheet.create({})
 ```
 
-#### `rncs`
-
-```javascript
-import React, { Component } from 'react'
-import { Text, StyleSheet, View } from 'react-native'
-
-export default class FileName extends Component {
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    )
-  }
-}
-
-const styles = StyleSheet.create({})
-```
-
-#### `rnce`
-
-```javascript
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
-
-export class FileName extends Component {
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    )
-  }
-}
-
-export default $1
-```
-
-#### `rncredux`
-
-```javascript
-import React, { Component } from 'react'
-import { View, Text } from 'react-native'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
-
-export class FileName extends Component {
-  static propTypes = {
-    $2: $3,
-  }
-
-  render() {
-    return (
-      <View>
-        <Text> $2 </Text>
-      </View>
-    )
-  }
-}
-
-const mapStateToProps = (state) => ({})
-
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(FileName)
-```
-
 > TypeScript variants of the above components can be accessed by using the `ts` prefix e.g. `tsrfce`
+
+### TanStack Query
+
+> Install with `npm install @tanstack/react-query`.
+
+|        Trigger | Description                                            |
+| -------------: | ------------------------------------------------------ |
+| `tqprovider→` | `QueryClientProvider` app setup                        |
+|      `imtq→` | `import { useQuery, useMutation, useQueryClient }`      |
+|   `tqquery→` | `useQuery({ queryKey, queryFn })`                       |
+| `tqmutation→` | `useMutation({ mutationFn, onSuccess })`                |
+
+#### `tqprovider`
+
+```javascript
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
+
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      children
+    </QueryClientProvider>
+  )
+}
+```
+
+#### `tqquery`
+
+```javascript
+const { data, isLoading, error } = useQuery({
+  queryKey: ['key'],
+  queryFn: fetchFn
+})
+```
+
+#### `tqmutation`
+
+```javascript
+const mutation = useMutation({
+  mutationFn: mutateFn,
+  onSuccess: () => {
+    queryClient.invalidateQueries({ queryKey: ['key'] })
+  }
+})
+```
+
+### SWR
+
+> Install with `npm install swr`.
+
+|   Trigger | Description                        |
+| --------: | ---------------------------------- |
+| `imswr→` | `import useSWR from 'swr'`         |
+|   `swr→` | `useSWR(key, fetcher)`             |
+|  `swrf→` | `useSWR` with inline async fetcher |
+
+#### `swr`
+
+```javascript
+const { data, error, isLoading } = useSWR('key', fetcher)
+```
+
+#### `swrf`
+
+```javascript
+const { data, error, isLoading } = useSWR(
+  'key',
+  async (url) => {
+    const res = await fetch(url)
+    return res.json()
+  }
+)
+```
 
 ### Other
 
@@ -647,17 +515,16 @@ it('should $1', () => {
 #### `stest`
 
 ```javascript
-import React from 'react'
-import renderer from 'react-test-renderer'
+import { render, screen } from '@testing-library/react'
 
 import { ${1:ComponentName} } from '../${1:ComponentName}'
 
 describe('<${1:ComponentName} />', () => {
   const defaultProps = {}
-  const wrapper = renderer.create(<${1:ComponentName} {...defaultProps} />)
 
   test('render', () => {
-    expect(wrapper).toMatchSnapshot()
+    render(<${1:ComponentName} {...defaultProps} />)
+    expect(screen.getByRole('$2')).toBeInTheDocument()
   })
 })
 ```
@@ -665,8 +532,7 @@ describe('<${1:ComponentName} />', () => {
 #### `srtest`
 
 ```javascript
-import React from 'react'
-import renderer from 'react-test-renderer'
+import { render, screen } from '@testing-library/react'
 import { Provider } from 'react-redux'
 
 import store from 'src/store'
@@ -674,14 +540,14 @@ import { ${1:ComponentName} } from '../${1:ComponentName}'
 
 describe('<${1:ComponentName} />', () => {
   const defaultProps = {}
-  const wrapper = renderer.create(
-    <Provider store={store}>
-      <${1:${TM_FILENAME_BASE}} {...defaultProps} />)
-    </Provider>,
-  )
 
   test('render', () => {
-    expect(wrapper).toMatchSnapshot()
+    render(
+      <Provider store={store}>
+        <${1:ComponentName} {...defaultProps} />
+      </Provider>,
+    )
+    expect(screen.getByRole('$2')).toBeInTheDocument()
   })
 })
 ```
@@ -689,21 +555,16 @@ describe('<${1:ComponentName} />', () => {
 #### `sntest`
 
 ```javascript
-import 'react-native'
-import React from 'react'
-import renderer from 'react-test-renderer'
+import { render, screen } from '@testing-library/react-native'
 
 import ${1:ComponentName} from '../${1:ComponentName}'
 
 describe('<${1:ComponentName} />', () => {
-  const defaultProps = {
-
-  }
-
-  const wrapper = renderer.create(<${1:ComponentName} {...defaultProps} />)
+  const defaultProps = {}
 
   test('render', () => {
-    expect(wrapper).toMatchSnapshot()
+    render(<${1:ComponentName} {...defaultProps} />)
+    expect(screen.getByText('$2')).toBeTruthy()
   })
 })
 ```
@@ -711,9 +572,7 @@ describe('<${1:ComponentName} />', () => {
 #### `snrtest`
 
 ```javascript
-import 'react-native'
-import React from 'react'
-import renderer from 'react-test-renderer'
+import { render, screen } from '@testing-library/react-native'
 import { Provider } from 'react-redux'
 
 import store from 'src/store/configureStore'
@@ -721,14 +580,14 @@ import ${1:ComponentName} from '../${1:ComponentName}'
 
 describe('<${1:ComponentName} />', () => {
   const defaultProps = {}
-  const wrapper = renderer.create(
-    <Provider store={store}>
-      <${1:ComponentName} {...defaultProps} />
-    </Provider>,
-  )
 
   test('render', () => {
-    expect(wrapper).toMatchSnapshot()
+    render(
+      <Provider store={store}>
+        <${1:ComponentName} {...defaultProps} />
+      </Provider>,
+    )
+    expect(screen.getByText('$2')).toBeTruthy()
   })
 })
 ```
@@ -736,7 +595,6 @@ describe('<${1:ComponentName} />', () => {
 #### `hocredux`
 
 ```javascript
-import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
@@ -763,7 +621,6 @@ export default WrapperComponent => connect(mapStateToProps, mapDispatchToProps)(
 #### `hoc`
 
 ```javascript
-import React from 'react'
 import PropTypes from 'prop-types'
 
 export default (WrappedComponent) => {
@@ -773,6 +630,182 @@ export default (WrappedComponent) => {
 
   return hocComponent
 }
+```
+
+#### `useId`
+
+```javascript
+const id = useId()
+```
+
+#### `useSyncExternalStore`
+
+```javascript
+const snapshot = useSyncExternalStore(subscribe, getSnapshot)
+```
+
+#### `useInsertionEffect`
+
+```javascript
+useInsertionEffect(() => {
+  effect
+  return () => {
+    cleanup
+  }
+}, [input])
+```
+
+#### `useHook` *(React 19 — `use()`)*
+
+```javascript
+const value = use(resource)
+```
+
+#### `useOptimistic`
+
+```javascript
+const [optimisticState, addOptimistic] = useOptimistic(state)
+```
+
+#### `useActionState`
+
+```javascript
+const [state, formAction, isPending] = useActionState(action, initialState)
+```
+
+#### `useFormStatus`
+
+```javascript
+const { pending, data, method, action } = useFormStatus()
+```
+
+#### `useNavigate`
+
+```javascript
+const navigate = useNavigate()
+```
+
+#### `useParams`
+
+```javascript
+const { param } = useParams()
+```
+
+#### `useLocation`
+
+```javascript
+const location = useLocation()
+```
+
+#### `useSearchParams`
+
+```javascript
+const [searchParams, setSearchParams] = useSearchParams()
+```
+
+#### `useTransition`
+
+```javascript
+const [isPending, startTransition] = useTransition()
+```
+
+#### `useDeferredValue`
+
+```javascript
+const deferredValue = useDeferredValue(value)
+```
+
+#### `useState`
+
+```javascript
+const [state, setState] = useState(initialState)
+```
+
+#### `useEffect`
+
+```javascript
+useEffect(() => {
+  effect
+  return () => {
+    cleanup
+  }
+}, [input])
+```
+
+#### `useContext`
+
+```javascript
+const context = useContext(contextValue)
+```
+
+#### `useReducer`
+
+```javascript
+const [state, dispatch] = useReducer(reducer, initialState, init)
+```
+
+#### `useCallback`
+
+```javascript
+const ${1:memoizedFn} = useCallback(
+  () => {
+    ${2:callback}
+  },
+  [${3:deps}],
+)
+```
+
+#### `useMemo`
+
+```javascript
+const ${1:memoizedValue} = useMemo(() => ${2:computeFn}, [${3:deps}])
+```
+
+#### `useRef`
+
+```javascript
+const ref = useRef(initialValue)
+```
+
+#### `useImperativeHandle`
+
+```javascript
+useImperativeHandle(
+  ref,
+  () => {
+    handler
+  },
+  [input],
+)
+```
+
+#### `useDebugValue`
+
+```javascript
+useDebugValue(value)
+```
+
+#### `useLayoutEffect`
+
+```javascript
+useLayoutEffect(() => {
+  effect
+  return () => {
+    cleanup
+  };
+}, [input])
+```
+
+#### `useSelector`
+
+```javascript
+const state = useSelector(state => state.state)
+```
+
+#### `useDispatch`
+
+```javascript
+const dispatch = useDispatch()
 ```
 
 ## Acknowledgements
